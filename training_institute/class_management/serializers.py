@@ -1,14 +1,15 @@
 from rest_framework import serializers
 from .models import *
 
+from rest_framework import serializers
+from .models import User, Subjects
+
 class subjectserializer(serializers.ModelSerializer):
     class Meta:
         model = Subjects
         fields = ["id", "subject_name"]
 
 
-from rest_framework import serializers
-from .models import User, Subjects
 
 class UserSerializer(serializers.ModelSerializer):
 
